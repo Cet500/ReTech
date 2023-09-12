@@ -1,0 +1,64 @@
+/* ---------------------------------- colors -------------------------------- */
+
+/* ------------------ background colors ----------------- */
+
+.clr-light{
+	background-color: var(--color-light);
+}
+.clr-primary{
+	background-color: var(--color-primary);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+.clr-white{
+	background-color: var(--color-white);
+}
+.clr-grey{
+	background-color: var(--color-lightgray);
+}
+.clr-darkgrey{
+	background-color: var(--color-darkgray);
+}
+.clr-black{
+	background-color: var(--color-black);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+.clr-success{
+	background-color: var(--color-success);
+}
+.clr-danger{
+	background-color: var(--color-danger);
+}
+
+/* --------------------- text colors -------------------- */
+
+.clr-primary-text{
+	color: var(--color-primary);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+.clr-white-text{
+	color: var(--color-white);
+}
+.clr-grey-text{
+	color: var(--color-lightgray);
+}
+.clr-darkgrey-text{
+	color: var(--color-darkgray);
+}
+.clr-black-text{
+	color: var(--color-black);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+.clr-success-text{
+	color: var(--color-success);
+}
+.clr-danger-text{
+	color: var(--color-danger);
+}

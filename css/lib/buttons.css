@@ -1,0 +1,144 @@
+/* ----------------------------- lib of buttons ----------------------------- */
+
+/* -------------------- buttons base -------------------- */
+
+.btn{
+	display: block;
+	font-family: "Inter", monospace;
+	font-size: 0.85rem;
+	font-weight: 500;
+	margin: 0.375rem;
+	padding: 0.84rem 2.14rem;
+	color: var(--color-black);
+	background-color: var(--color-lightgray);
+	text-transform: uppercase;
+	text-decoration: none;
+	word-wrap: break-word;
+	white-space: normal;
+	cursor: pointer;
+	transition: color 0.15s ease-in-out,
+				background-color 0.15s ease-in-out,
+				border 0.15s ease-in-out,
+				filter 0.15s ease-in-out;
+	border-radius: 0.35em;
+	border: 2px inset transparent;
+	box-sizing: content-box;
+	outline: none;
+}
+
+/* ------------------ buttons variants ------------------ */
+
+.btn:hover,
+.btn.hover{
+	outline: none;
+	filter: brightness(1.1);
+}
+.btn:active,
+.btn.active{
+	filter: brightness(0.9);
+}
+.btn:focus,
+.btn.focus{
+	border: 2px solid var(--color-darkgray);
+}
+.btn:disabled,
+.btn.disabled,
+.btn[disabled]{
+	color: var(--color-lightgray);
+	cursor: default;
+	pointer-events: none;
+	user-select: none;
+}
+
+/* -------------------- buttons forms ------------------- */
+
+.btn-square{
+	border-radius: 0;
+}
+.btn-rounded{
+	border-radius: 0.7em;
+}
+.btn-round{
+	border-radius: 10em;
+}
+
+.btn-bold{
+	white-space: nowrap;
+	font-size: 1rem !important;
+	font-weight: 600;
+}
+
+/* ---------------- buttons display types --------------- */
+
+.btn.inline-block{
+	display: inline-block;
+}
+.btn.inline{
+	display: inline;
+}
+
+.btn-invisible{
+	background: none;
+	outline: none;
+	border: none;
+}
+
+/* -------------------- buttons sizes ------------------- */
+
+.btn.btn-lg{
+	padding: 1rem 2.4rem;
+	font-size: .94rem
+}
+.btn.btn-md{
+	padding: .7rem 1.6rem;
+	font-size: .875rem
+}
+.btn.btn-sm{
+	padding: .5rem 1.6rem;
+	font-size: .75rem
+}
+.btn.btn-mc{
+	padding: .4rem 1.2rem;
+	font-size: .75rem
+}
+
+/* --------------- main types of buttons --------------- */
+
+.btn-primary{
+	color: var(--color-white);
+	background-color: var(--color-primary);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+.btn-primary-outline{
+	color: var(--color-primary);
+	background-color: transparent;
+	outline: 2px solid var(--color-primary);
+}
+.btn-primary-outline:hover{
+	color: var(--color-white);
+	background-color: var(--color-primary);
+	outline: none;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+.btn-success{
+	color: var(--color-white);
+	background-color: var(--color-success);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+.btn-danger{
+	color: var(--color-white);
+	background-color: var(--color-danger);
+}
+
+/* --------------- main colors of buttons --------------- */
+
+.btn-white {
+	color: var(--color-black);
+	background-color: var(--color-white)
+}

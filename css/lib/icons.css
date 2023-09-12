@@ -1,0 +1,58 @@
+/* --------------------------------- icons ---------------------------------- */
+
+/* ------------------------ body ------------------------ */
+
+/* ----------------------- blocks ----------------------- */
+
+.i-circle{
+	text-align: center;
+	font-size: 28px;
+	color: var(--color-white);
+	background-color: var(--color-primary);
+	padding: 14px 0;
+	width: 56px;
+	height: min-content;
+	border-radius: 60px;
+	transition: color .2s, background-color .2s;
+}
+
+.i-bg{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	box-sizing: border-box;
+	rotate: 0deg;
+	font-size: 200px;
+	color: rgba(0, 0, 0, .05);
+	transition: rotate .7s, font-size .7s;
+}
+
+.i-rating{
+	padding-bottom: 20px;
+	color: var(--color-primary);
+}
+
+.i-border-sm {
+	width: 100px;
+	height: 3px;
+	border-top: solid 2px var(--color-primary);
+	border-left: none;
+	border-right: none;
+	display: block;
+	margin: 15px auto 30px;
+}
+.i-border {
+	width: 250px;
+	height: 3px;
+	border-top: solid 2px var(--color-primary);
+	border-left: none;
+	border-right: none;
+	display: block;
+	margin: 15px auto 15px;
+}
+
+.i-brands{
+	font-size: 35px;
+	margin: 16px 0;
+	color: var(--color-primary);
+}

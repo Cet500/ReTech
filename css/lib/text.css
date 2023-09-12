@@ -1,0 +1,104 @@
+/* ---------------------------------- text ---------------------------------- */
+
+/* ----------------------- titles ----------------------- */
+
+.title{
+	margin-top: 0;
+	margin-bottom:10px;
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #071c39;
+}
+.title:has(i){
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: 10px;
+}
+.title-h1{
+	font-size: 46px;
+	margin-bottom: 20px;
+	line-height: 56px;
+	letter-spacing: -1px;
+}
+.title-h2{
+	font-size: 34px;
+	line-height: 42px;
+	letter-spacing:-1px;
+}
+.title-h3{
+	font-size: 24px;
+}
+.title-h4{
+	font-size: 20px;
+}
+.title-h5{
+	font-size: 18px;
+}
+.title-h6{
+	font-size: 16px;
+}
+
+/* --------------------- plain text --------------------- */
+
+.text{
+	font-family: "Inter", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #595d69;
+	line-height: 1.7em;
+}
+.text-sm{
+	display: block;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* --------------------- text types --------------------- */
+
+.text-center{
+	text-align: center;
+}
+.text-center .title:has(i){
+	display: block;
+}
+.text-right{
+	text-align: right;
+}
+
+/* ------------------------ lists ----------------------- */
+
+.price-list{
+	list-style: none;
+	padding: 0;
+}
+.price-list li{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 30px;
+	color: #505050;
+}
+.price-list li span:nth-child(1) {
+	flex: 1 0;
+	border-bottom: 1px dotted #666;
+	height: 1.1em;
+	margin: 0 .5em;
+}
+.price-list li span:nth-child(2) {
+	font-weight: 500;
+	color: var(--color-darkgray);
+}
+.price-list li:hover {
+	font-weight: 500;
+	color: var(--color-black);
+}
+.price-list li:hover span:nth-child(1) {
+	border-bottom: 1px solid var(--color-black);
+}
+.price-list li:hover span:nth-child(2) {
+	font-weight: 600;
+	color: var(--color-black);
+}
+
+/* ------------------------ links ----------------------- */

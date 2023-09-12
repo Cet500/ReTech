@@ -1,0 +1,183 @@
+/* ---------------------------------- media --------------------------------- */
+
+/* --------------------- 1000 - 1200 -------------------- */
+
+@media screen and (max-width: 1200px) {
+
+	.menu a{
+		padding: 30px 7px;
+	}
+
+}
+
+/* ---------------------- 760 - 1000 -------------------- */
+
+@media screen and (max-width: 1000px) {
+
+	.header__inner{
+		grid-template-columns: 1fr auto auto;
+		grid-template-rows: auto 1fr;
+		grid-template-areas: "hi_logo hi_tel hi_btn"
+							 "hi_nav  hi_nav hi_nav";
+	}
+	.header__btn{
+		display: block;
+	}
+
+	/* - - - - - - - - - - - - - - - - - - - - - - */
+
+	.nav{
+		visibility: hidden;
+		opacity: 0;
+		height: 0;
+		transition: visibility 0s, opacity 0.5s linear;
+	}
+	.nav.mobile {
+		visibility: visible;
+		opacity: 1;
+		height: auto;
+	}
+	.nav.mobile .menu{
+		flex-direction: column;
+		padding-left: 0;
+		margin: 15px 0;
+	}
+	.nav.mobile .menu li{
+		border-bottom: 1px solid var(--color-white);
+	}
+	.nav.mobile .menu li:last-child{
+		border-bottom: 0;
+	}
+	.nav.mobile .menu li:hover{
+		background: rgba(var(--primary-color-rgb), 0.1);
+	}
+	.nav.mobile .menu a{
+		width: 100%;
+		padding: 25px 0;
+	}
+	.nav.mobile .menu a{
+		padding: 20px 0;
+	}
+
+
+}
+
+/* ---------------------- 425 - 760 --------------------- */
+
+@media screen and (max-width: 760px) {
+
+	/* THIS IS FEATURE, NOT BUG */
+	.container{
+		padding: 0;
+	}
+	.row{
+		margin: 0;
+	}
+
+	.g-5, .gx-5{
+		--bs-gutter-x: 1rem;
+	}
+
+	/* - - - - - - - - - - - - - - - - - - - - - - */
+
+	.header__tel .btn{
+		padding: 15px;
+	}
+	.header__tel .fa{
+		font-size: 18px;
+	}
+	.header__tel .tel{
+		display: none;
+	}
+
+}
+
+/* ---------------------- 0 - 425 --------------------- */
+
+@media screen and (max-width: 425px) {
+
+	.logo-full{
+		display: none;
+	}
+	.logo-mobile{
+		display: block;
+		padding: 12px;
+	}
+
+	/* - - - - - - - - - - - - - - - - - - - - - - */
+
+	.title:has(i) {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.title-h1{
+		font-size: 32px;
+		letter-spacing: -2px;
+		word-break: break-word;
+	}
+	.title-h2{
+		font-size: 28px;
+		word-break: break-word;
+	}
+	.title-h3{
+		font-size: 20px;
+	}
+
+	.price-list li{
+		flex-direction: column;
+	}
+	.price-list li span:nth-child(1) {
+		display: none;
+	}
+
+	/* - - - - - - - - - - - - - - - - - - - - - - */
+
+	.feature-box{
+		padding: 30px 20px;
+	}
+	.price-block > :first-child {
+		padding: 20px;
+	}
+	.feedback-block{
+		padding: 30px 20px;
+	}
+
+	/* - - - - - - - - - - - - - - - - - - - - - - */
+
+	.i-bg{
+		font-size: 150px;
+	}
+	.i-border{
+		width: 80%;
+	}
+
+	/* - - - - - - - - - - - - - - - - - - - - - - */
+
+	.form__fieldset{
+		margin: 0;
+		padding-left: 0;
+	}
+	.form__label{
+		flex-direction: column;
+		border-radius: 0;
+		padding: 10px 0;
+	}
+	.form__input{
+		padding: 10px 0;
+	}
+	.form__label:has( .form__input.focus ),
+	.form__label:has( .form__input:focus ){
+		outline: none;
+	}
+
+	/* - - - - - - - - - - - - - - - - - - - - - - */
+
+	.footer{
+		padding: 30px 20px;
+	}
+
+}

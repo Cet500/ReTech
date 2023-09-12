@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<title>ReTech</title>
+
+	<!-- Import bootstrap grid -->
+	<link rel="stylesheet" href="css/ext/bootstrap-grid.css">
+	<!-- Import global vars -->
+	<link rel="stylesheet" href="css/src/global_vars.css">
+	<!-- Import libs styles -->
+	<link rel="stylesheet" href="css/lib/buttons.css">
+	<link rel="stylesheet" href="css/lib/forms.css">
+	<link rel="stylesheet" href="css/lib/icons.css">
+	<link rel="stylesheet" href="css/lib/text.css">
+	<!-- Import color lib styles -->
+	<link rel="stylesheet" href="css/lib/colors.css">
+	<!-- Import main styles -->
+	<link rel="stylesheet" href="css/src/global.css">
+	<!-- Import media styles -->
+	<link rel="stylesheet" href="css/src/global_media.css">
+	<!-- Import external styles -->
+	<link rel="stylesheet" href="css/ext/jquery.modal.min.css">
+	<link rel="stylesheet" href="css/ext/animate.min.css">
+	<link rel="stylesheet" href="css/ext/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/ext/owl.theme.default.min.css">
+
+	<!-- import font FontAwesome -->
+	<link rel="stylesheet" href="fonts/fontawesome-pro-6.4.2-web/css/fontawesome.min.css">
+	<link rel="stylesheet" href="fonts/fontawesome-pro-6.4.2-web/css/solid.min.css">
+	<link rel="stylesheet" href="fonts/fontawesome-pro-6.4.2-web/css/brands.min.css">
+	<!-- import font Inter -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+		  rel="stylesheet">
+
+	<!-- import jquery and js plugins -->
+	<script src="js/ext/jquery-3.7.0.min.js"></script>
+	<script src="js/ext/jquery.modal.min.js"></script>
+	<script src="js/ext/owl.carousel.min.js"></script>
+	<script src="js/ext/typed.js"></script>
+	<script src="js/ext/wow.min.js"></script>
+</head>
+
+<body class="body">
+
+	<header class="header" id="header" style="background-color: rgb(222, 216, 251)">
+		<div class="container header__inner">
+			<div class="logo">
+				<a href="index.html">
+					<img class="logo-full"   alt="logo" src="img/logo.png">
+					<img class="logo-mobile" alt="logo" src="img/logo-micro.png">
+				</a>
+			</div>
+
+			<nav class="nav">
+				<ul class="menu">
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#section-highlight">Плюсы</a>
+					</li>
+					<li>
+						<a href="#section-path">Путь</a>
+					</li>
+					<li>
+						<a href="#section-services">Услуги</a>
+					</li>
+					<li>
+						<a href="#section-feedback">Отзывы</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="header__tel">
+				<a class="btn btn-round btn-primary inline-block" href="tel:+78005553535">
+					<i class="fa fa-phone"></i>
+					<span class="tel">8 (800) 555-35-35</span>
+				</a>
+			</div>
+
+			<button class="header__btn btn-invisible"
+					onclick="$('.nav').toggleClass('mobile');
+							 $(this).toggleClass('mobile')">
+				<i class="fa fa-bars"></i>
+				<i class="fa fa-x"></i>
+			</button>
+		</div>
+	</header>
+
+
+	<main class="main">
+		<div id="top"></div>
+
+		<section class="section" aria-label="section" style="background: url('img/bg/2.jpg') center top / cover;">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 wow fadeInLeft">
+						<div class="spacer-10"></div>
+
+						<div class="typed-strings" style="display: none;">
+							<p>Срочный</p><p>Качественный</p><p>Профессиональный</p><p>Быстрый</p>
+						</div>
+
+						<h1 class="title title-h1">
+							<span class="typed"></span><span class="typed-cursor"></span>
+							ремонт компьютеров в Хабаровске
+						</h1>
+
+						<p class="text text-sm">Выезд мастера в течение часа в пределах города</p>
+
+						<div>
+							<a class="btn btn-primary btn-md btn-round inline-block"
+									href="#modal-master" rel="modal:open">
+								Вызов мастера
+							</a>
+
+							<a class="btn btn-primary-outline btn-md btn-round inline-block"
+									href="#modal-tel" rel="modal:open">
+								Заказать звонок
+							</a>
+						</div>
+					</div>
+
+					<div class="col-lg-6 wow fadeInRight">
+						<img src="img/misc/1.png" class="img-fluid" alt="" style="width: 100%">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="section-highlight"></div>
+
+		<section class="section">
+			<div class="text-center">
+				<h2 class="title title-h2">Наши преимущества</h2>
+				<div class="i-border-sm"></div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 g-3">
+						<div class="feature-box wow fadeInDown">
+							<h3 class="title title-h3">
+								<i class="i-circle fa fa-percent"></i>
+								Скидки
+							</h3>
+
+							<p class="text">
+								Для новых клиентов скидка на ремонт - 15%
+							</p>
+
+							<i class="i-bg fa fa-badge-percent"></i>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 g-3">
+						<div class="feature-box wow fadeInDown">
+							<h3 class="title title-h3">
+								<i class="i-circle fa fa-gauge-max"></i>
+								Скорость
+							</h3>
+
+							<p class="text">
+								Наши мастера приедут к вам на дом в течение часа после обращения
+							</p>
+
+							<i class="i-bg fa fa-ambulance"></i>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 g-3">
+						<div class="feature-box wow fadeInDown">
+							<h3 class="title title-h3">
+								<i class="i-circle fa fa-heartbeat"></i>
+								Бесплатная диагностика
+							</h3>
+
+							<p class="text">
+								Осмотрим ваше устройство и выявим самый оптимальный путь решения
+							</p>
+
+							<i class="i-bg fa fa-wave-pulse"></i>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 g-3">
+						<div class="feature-box wow fadeInUp">
+							<h3 class="title title-h3">
+								<i class="i-circle fa fa-sliders"></i>
+								Даём предварительную оценку
+							</h3>
+
+							<p class="text">
+
+								После диагностики вашего устройства сообщим о стоимости работ, где подробно опишем
+								стоимость всех услуг.
+							</p>
+
+							<i class="i-bg fa fa-star"></i>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 g-3 wow fadeInUp">
+						<div class="feature-box f-boxed style-3">
+							<h3 class="title title-h3">
+								<i class="i-circle fa fa-key"></i>
+								Собираем компьютеры "под ключ"
+							</h3>
+
+							<p class="text">
+								Соберём для вас самый мощный компьютер из всех, максимально грамотно распределим
+								бюджет. Всё под ключ.
+							</p>
+
+							<i class="i-bg fa fa-microchip"></i>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 g-3 wow fadeInUp">
+						<div class="feature-box">
+							<h3 class="title title-h3">
+								<i class="i-circle fa fa-face-awesome"></i>
+								Хорошее настроение в подарок
+							</h3>
+
+							<p class="text">
+								Наши мастера приедут с хорошим настроением и подарят его вам
+							</p>
+
+							<i class="i-bg fa fa-gift"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="section-path"></div>
+
+		<section class="section">
+			<div class="text-center">
+				<h2 class="title title-h2">
+					4 простых шага<br>
+					<span class="title-h3">и ваш компьютер в полном порядке</span>
+				</h2>
+				<div class="i-border-sm"></div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-xxl-3 col-lg-6 g-3">
+						<div class="feature-box wow fadeInLeft">
+							<h3 class="title title-h3">
+								<i class="i-circle fa fa-1"></i>
+								Консультация
+							</h3>
+
+							<p class="text">
+								Позвоните и расскажите о поломке, мы озвучим предполагаемую причину поломки, назовём
+								стоимость ремонта, дадим консультацию и рекомендации до приезда мастера.
+							</p>
+
+							<i class="i-bg fa fa-circle-quarter-stroke"></i>
+						</div>
+					</div>
+
+					<div class="col-xxl-3 col-lg-6 g-3">
+						<div class="feature-box wow fadeInRight">
+							<h3 class="title title-h3">
+								<i class="i-circle fa fa-2"></i>
+								Выезд мастера
+							</h3>
+
+							<p class="text">
+								Мастер приедет в течение 30–60 минут или в удобное для вас время, проведёт диагностику
+								неисправного компьютерного устройства, составит и подпишет договор.
+							</p>
+
+							<i class="i-bg fa fa-circle-half-stroke"></i>
+						</div>
+					</div>
+
+					<div class="col-xxl-3 col-lg-6 g-3">
+						<div class="feature-box wow fadeInLeft">
+							<h3 class="title title-h3">
+								<i class="i-circle fa fa-3"></i>
+								Ремонт
+							</h3>
+
+							<p class="text">
+								После согласования ремонта мастер приступит к работе. Около 95% неисправностей мы
+								можем устранить на месте благодаря техническому оснащению мастера.
+							</p>
+
+							<i class="i-bg fa fa-circle-three-quarters-stroke"></i>
+						</div>
+					</div>
+
+					<div class="col-xxl-3 col-lg-6 g-3">
+						<div class="feature-box wow fadeInRight">
+							<h3 class="title title-h3">
+								<i class="i-circle fa fa-4"></i>
+								Гарантии
+							</h3>
+
+							<p class="text">
+								По окончании ремонта вы получите чек и гарантию. Эти документы дают вам право на
+								бесплатное обращение в IT-Base, в случае повторного возникновения поломки.
+							</p>
+
+							<i class="i-bg fa fa-circle"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="section-services"></div>
+
+		<section class="section">
+			<div class="text-center">
+				<h2 class="title title-h2">Наши услуги</h2>
+				<div class="i-border-sm"></div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-sm-12 gx-5 gx-md-3">
+						<div class="price-block wow fadeInLeft">
+							<div class="clr-light text-center">
+								<h2 class="title title-h2">
+									<i class="i-circle fa fa-wrench"></i>
+									Ремонт
+								</h2>
+							</div>
+
+							<div>
+								<ul class="text price-list">
+									<li>Установка Windows <span></span><span>от 320 ₽</span></li>
+									<li>Установка другой ОС <span></span><span>от 450 ₽</span></li>
+									<li>Установка программ <span></span><span>от 270 ₽</span></li>
+									<li>Чистка компьютера <span></span><span>от 600 ₽</span></li>
+									<li>Удаление вирусов <span></span><span>от 300 ₽</span></li>
+									<li>Настройка Wi-Fi <span></span><span>от 400 ₽</span></li>
+									<li>Настройка Windows <span></span><span>от 300 ₽</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-sm-12 gx-5 gx-md-3">
+						<div class="price-block wow fadeInRight">
+							<div class="clr-light text-center">
+								<h2 class="title title-h2">
+									<i class="i-circle fa fa-refresh"></i>
+									Модернизация
+								</h2>
+							</div>
+
+							<div>
+								<ul class="text price-list">
+									<li>Замена HDD <span></span><span>от 450 ₽</span></li>
+									<li>Замена SSD <span></span><span>от 450 ₽</span></li>
+									<li>Замена ОЗУ <span></span><span>от 400 ₽</span></li>
+									<li>Замена процессора <span></span><span>от 600 ₽</span></li>
+									<li>Замена видеокарты <span></span><span>от 470 ₽</span></li>
+									<li>Замена кулера <span></span><span>от 450 ₽</span></li>
+									<li>Замена батарейки BIOS <span></span><span>от 900 ₽</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div id="section-feedback"></div>
+
+		<section class="section">
+			<div class="text-center">
+				<h2 class="title title-h2">Отзывы</h2>
+				<div class="i-border-sm"></div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="owl-carousel owl-theme wow fadeInUp" id="testimonial-carousel">
+							<blockquote class="item feedback-block">
+								<div class="i-rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+
+								<h3 class="title title-h4">Невероятные!</h3>
+								<p class="text">Прямо как Киану Ривз.</p>
+								<span class="text text-sm">Михаэль</span>
+
+								<i class="i-bg fa fa-ranking-star"></i>
+							</blockquote>
+
+							<blockquote class="item feedback-block">
+								<div class="i-rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+
+								<h3 class="title title-h4">Нереально крутые!</h3>
+								<p class="text">Самые великие пацаны.</p>
+								<span class="text text-sm">Джон</span>
+
+								<i class="i-bg fa fa-ranking-star"></i>
+							</blockquote>
+
+							<blockquote class="item feedback-block">
+								<div class="i-rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+
+								<h3 class="title title-h4">Волшебные!</h3>
+								<p class="text">10 компов после Crysis из 10.</p>
+								<span class="text text-sm">Сара</span>
+
+								<i class="i-bg fa fa-ranking-star"></i>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="widget">
+						<a href="index.html">
+							<img alt="logo" src="img/logo.png">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="widget">
+						<a class="btn btn-primary btn-md btn-round inline-block"
+						   href="#modal-master" rel="modal:open">
+							Вызов мастера
+						</a>
+
+						<a class="btn btn-primary-outline btn-md btn-round inline-block"
+						   href="#modal-tel" rel="modal:open">
+							Заказать звонок
+						</a>
+
+						<div class="spacer-10"></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div id="modal-master" class="modal wow rubberBand">
+		<h3 class="title title-h3 text-center">Контактные данные</h3>
+		<div class="i-border"></div>
+
+		<p class="title title-h5 text-center">8 (800) 555-35-35</p>
+		<p class="i-brands text-center">
+			<i class="fa-brands fa-telegram"></i>
+			<i class="fa-brands fa-whatsapp"></i>
+			<i class="fa-brands fa-instagram"></i>
+		</p>
+
+		<p class="text text-center">
+			Рабочее время с 9:00 - 21:00 по ХБК
+		</p>
+	</div>
+
+
+	<div id="modal-tel" class="modal wow rubberBand">
+		<h3 class="title title-h3 text-center">Заказать звонок</h3>
+		<div class="i-border"></div>
+
+		<p class="title title-h5 text-center">Укажите свой номер телефона, а мы вам перезвоним.</p>
+
+		<form name="contactForm" id="contact_form" class="form" method="post" action=""><!-- TODO: доделать куда -->
+			<fieldset class="form__fieldset">
+				<legend>Ваши данные</legend>
+
+				<label class="form__label">
+					Ваше имя:
+					<input class="form__input" type="text" name="name" id="name" placeholder="Имя...">
+				</label>
+
+				<label class="form__label">
+					 Телефон:
+					<input class="form__input" type="text" name="tel" id="tel" placeholder="88005553535">
+				</label>
+			</fieldset>
+
+			<div id="submit" class="text-right">
+				<input type="submit" id="send_message" value="Отправить" class="btn btn-primary btn-md btn-round inline">
+			</div>
+		</form>
+	</div>
+
+
+	<div id="cookie">
+		<p class="text">Этот веб-сайт использует куки-файлы для вашего удобства.</p>
+		<a class="btn btn-white btn-mc btn-round inline" href="#" target="_blank">Подробнее</a>.
+		<a class="btn btn-primary btn-mc btn-round inline" id="cookieOK">Принять все cookies</a>
+	</div>
+
+
+	<!-- settings for js -->
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			$(function () {
+				// jquery typed plugin
+				$(".typed").typed({
+					stringsElement: $('.typed-strings'),
+					typeSpeed: 200,
+					backDelay: 1500,
+					loop: true,
+					contentType: 'html', // or text
+					loopCount: false,
+					callback: function () { null; },
+					resetCallback: function () { newTyped(); }
+				});
+				// jquery owl carousel plugin
+				$(".owl-carousel").owlCarousel({
+					loop: true,
+					margin: 20,
+					nav: false,
+					responsiveClass:true,
+					responsive:{
+						0:{
+							items: 1,
+							margin: 0
+						},
+						800:{
+							items: 2
+						},
+						1200:{
+							items: 3
+						}
+					}
+				});
+				// animate
+				new WOW().init();
+			});
+		});
+	</script>
+
+
+	<!-- another js scripts -->
+	<script type="text/javascript">
+		const container = document.querySelector("#cookie");
+		if (document.cookie.indexOf("warning") !== -1) {
+			container.classList.add("d-none");
+		}
+
+		if (document.querySelector("#cookie")) {
+			const apply = container.querySelector("#cookieOK");
+			apply.addEventListener("click", () => {
+				container.classList.add("d-none");
+				document.cookie = "warning=true; max-age=2592000; path=/";
+			});
+		}
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+				document.getElementById("header").style.backgroundColor = "#ffffff";
+			} else {
+				document.getElementById("header").style.backgroundColor = "#ded8fb";
+			}
+		}
+	</script>
+
+</body>
+</html>

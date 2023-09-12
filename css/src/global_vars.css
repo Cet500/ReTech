@@ -1,0 +1,24 @@
+/* ----------------------------- global colors ------------------------------ */
+
+/* --------------------- root colors -------------------- */
+
+:root{
+	/* types */
+	--color-primary: #8167e6;
+	--color-success: #28a745;
+	--color-danger:  #dc3545;
+
+	/* types rgb */
+	--primary-color-rgb: 129,103,230;
+
+	/* accents */
+	--color-light: #f0f4fd;
+
+	/* monochrome */
+	--color-white:		#ffffff;
+	--color-lightgray:  #b4b4b4;
+	--color-gray:       #666666;
+	--color-darkgray:	#333333;
+	--color-black: 		#000000;
+
+}
